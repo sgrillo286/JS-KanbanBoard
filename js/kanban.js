@@ -23,8 +23,8 @@ const create_item = () => {
   item.addEventListener('dragstart', event => event.dataTransfer.setData('text', event.target.id) );
   item.addEventListener('dragend', event => event.dataTransfer.clearData());
 
-  let input = doucment.createElement('input');
-  item.appendChild('input');
+  let input = document.createElement('input');
+  item.appendChild(input);
 
   let save_btn = document.createElement('button');
    save_btn.innerHTML = 'Save';
